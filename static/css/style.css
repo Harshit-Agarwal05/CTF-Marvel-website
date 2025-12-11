@@ -1,0 +1,188 @@
+/* ---------- BASE ---------- */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; height: 100%; }
+
+body {
+    background: #050509;
+    color: #eef0f3;
+    font-family: Inter, Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* ---------- STARFIELD BACKGROUND ---------- */
+#starfield {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* ---------- MAIN CONTENT ---------- */
+.page {
+    position: relative;
+    z-index: 1;
+}
+
+/* ---------- HEADER ---------- */
+.site-header {
+    text-align: center;
+    padding: 40px 0 10px;
+}
+
+.title {
+    font-size: 42px;
+    color: #ff2f4a;
+    text-shadow: 0 0 12px rgba(255,50,80,0.25);
+    animation: fadeIn 1.2s ease-out;
+}
+
+.subtitle {
+    opacity: 0.8;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity:0; transform: translateY(-10px); }
+    to { opacity:1; transform: translateY(0); }
+}
+
+/* ---------- LAYOUT CONTAINERS ---------- */
+.container {
+    width: min(1200px, 92%);
+    margin: auto;
+}
+
+/* BIG POSTERS ROW */
+.big-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* ---------- POSTER CARDS ---------- */
+.poster-card {
+    width: 100%;
+    max-width: 240px; /* uniform small poster width */
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.poster-card.big {
+    width: 100%;
+    max-width: 380px; /* uniform big poster width */
+}
+
+/* IMAGE CONTAINER */
+.image-wrapper {
+    width: 100%;
+    height: 340px; /* uniform small poster height */
+    overflow: hidden;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(6px);
+}
+
+.poster-card.big .image-wrapper {
+    height: 520px; /* uniform big poster height */
+}
+
+/* POSTER IMAGES */
+.poster-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+    transition: 0.3s ease;
+}
+
+.poster-card:hover img {
+    transform: scale(1.05);
+}
+
+/* QUOTE TEXT */
+.quote {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+/* ---------- GRID POSTERS (NON-OVERLAPPING) ---------- */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 40px 28px; /* spacing: vertical 40px / horizontal 28px */
+    justify-items: center;
+    margin-top: 20px;
+}
+
+/* ---------- FEEDBACK BOX ---------- */
+.feedback-container {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 14px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+    margin-top: 40px;
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    background: rgba(0,0,0,0.4);
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 25px;
+    background: #ff2f4a;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #ff4c61;
+}
+
+/* ---------- MOBILE RESPONSIVE ---------- */
+@media (max-width: 800px) {
+
+    .poster-card.big .image-wrapper {
+        height: 430px;
+    }
+
+    .big-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .poster-card {
+        max-width: 85%;
+    }
+
+    .poster-card.big {
+        max-width: 92%;
+    }
+
+    .image-wrapper {
+        height: 300px;
+    }
+
+    .poster-card.big .image-wrapper {
+        height: 380px;
+    }
+}

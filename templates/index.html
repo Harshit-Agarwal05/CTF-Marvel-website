@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marvel Multiverse Showcase</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <script defer src="/static/js/script.js"></script>
+</head>
+
+<body>
+    <!-- Background starfield -->
+    <canvas id="starfield"></canvas>
+
+    <main class="page">
+
+        <!-- HEADER -->
+        <header class="site-header">
+            <h1 class="title">Marvel Multiverse Showcase</h1>
+            <p class="subtitle">Explore iconic moments across the multiverse</p>
+        </header>
+
+        <!-- BIG POSTERS -->
+        <section class="section">
+            <div class="container big-container">
+
+                <article class="poster-card big">
+                    <div class="image-wrapper">
+                        <img src="/static/images/iron_man.jpg" alt="Iron Man Poster">
+                    </div>
+                    <p class="quote">"I am Iron Man."</p>
+                </article>
+
+                <article class="poster-card big">
+                    <div class="image-wrapper">
+                        <img src="/static/images/avengers_endgame.jpg" alt="Endgame Poster">
+                    </div>
+                    <p class="quote">"Whatever it takes."</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- GRID POSTERS -->
+        <section class="section">
+            <div class="container grid">
+
+                <article class="poster-card">
+                    <div class="image-wrapper">
+                        <img src="/static/images/spider_man_nwh.jpg" />
+                    </div>
+                    <p class="quote">"With great power..."</p>
+                </article>
+
+                <article class="poster-card">
+                    <div class="image-wrapper">
+                        <img src="/static/images/thor_love_and_thunder.jpg" />
+                    </div>
+                    <p class="quote">"Bring the thunder."</p>
+                </article>
+
+                <article class="poster-card">
+                    <div class="image-wrapper">
+                        <img src="/static/images/doctor_strange_multiverse.jpg" />
+                    </div>
+                    <p class="quote">"The Multiverse is real."</p>
+                </article>
+
+                <article class="poster-card">
+                    <div class="image-wrapper">
+                        <img src="/static/images/black_panther_wakanda.jpg" />
+                    </div>
+                    <p class="quote">"Wakanda Forever."</p>
+                </article>
+
+                <article class="poster-card">
+                    <div class="image-wrapper">
+                        <img src="/static/images/wandavision.jpg" />
+                    </div>
+                    <p class="quote">"This is chaos magic."</p>
+                </article>
+
+                <article class="poster-card">
+                    <div class="image-wrapper">
+                        <img src="/static/images/moon_knight.jpg" />
+                    </div>
+                    <p class="quote">"I am Vengeance."</p>
+                </article>
+
+                <article class="poster-card">
+                    <div class="image-wrapper">
+                        <img src="/static/images/ms_marvel.jpg" />
+                    </div>
+                    <p class="quote">"Heroes come in all forms."</p>
+                </article>
+
+                <article class="poster-card">
+                    <div class="image-wrapper">
+                        <img src="/static/images/hawkeye.jpg" />
+                    </div>
+                    <p class="quote">"Just aim and shoot."</p>
+                </article>
+
+                <article class="poster-card">
+                    <div class="image-wrapper">
+                        <img src="/static/images/guardians_vol3.jpg" />
+                    </div>
+                    <p class="quote">"We are Groot."</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- FEEDBACK -->
+        <section class="section">
+            <div class="container feedback-container">
+                <h2 class="feedback-title">Feedback</h2>
+                <textarea id="feedbackInput" placeholder="Write your message here..."></textarea>
+                <button id="submitBtn">Submit</button>
+                <p id="responseMessage" class="response"></p>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
