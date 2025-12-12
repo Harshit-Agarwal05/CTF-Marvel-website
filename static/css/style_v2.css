@@ -95,3 +95,8 @@ button { cursor:pointer; border:none; border-radius:10px; padding:10px 16px; }
   .poster-card.big .image-wrapper { height:380px; }
   #favInput { max-width:72%; }
 }
+
+.top-center {
+    display: flex;
+    justify-content: center;
+}

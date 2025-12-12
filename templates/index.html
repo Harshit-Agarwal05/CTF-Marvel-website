@@ -17,28 +17,31 @@
       <p class="subtitle">A cinematic gallery — explore iconic moments</p>
     </header>
 
-    <!-- Top big posters (2) -->
+    <!-- Top big posters (perfectly centered now) -->
     <section class="section big-section">
-      <div class="container big-container">
-        <article class="poster-card big">
-          <div class="image-wrapper">
-            <img src="/static/images/iron_man.jpg" alt="Iron Man">
-          </div>
-          <p class="quote">"I am Iron Man."</p>
-        </article>
+      <div class="container top-center">
+        <div class="big-container">
+          <article class="poster-card big">
+            <div class="image-wrapper">
+              <img src="/static/images/iron_man.jpg" alt="Iron Man">
+            </div>
+            <p class="quote">"I am Iron Man."</p>
+          </article>
 
-        <article class="poster-card big">
-          <div class="image-wrapper">
-            <img src="/static/images/avengers_endgame.jpg" alt="Avengers Endgame">
-          </div>
-          <p class="quote">"Whatever it takes."</p>
-        </article>
+          <article class="poster-card big">
+            <div class="image-wrapper">
+              <img src="/static/images/avengers_endgame.jpg" alt="Avengers Endgame">
+            </div>
+            <p class="quote">"Whatever it takes."</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- Grid of the remaining posters (10) -->
+    <!-- Grid of remaining posters -->
     <section class="section">
       <div class="container grid" id="posterGrid">
+
         <article class="poster-card">
           <div class="image-wrapper"><img src="/static/images/spider_man_nwh.jpg" alt=""></div>
           <p class="quote">"With great power..."</p>
@@ -88,10 +91,11 @@
           <div class="image-wrapper"><img src="/static/images/guardians_vol3.jpg" alt=""></div>
           <p class="quote">"We are Groot."</p>
         </article>
+
       </div>
     </section>
 
-    <!-- Favourite movie/series (below grid) -->
+    <!-- Favourites section -->
     <section class="section">
       <div class="container fav-section">
         <h2>Your Favourite Movie or Series</h2>
@@ -103,7 +107,7 @@
       </div>
     </section>
 
-    <!-- Feedback (secret string) -->
+    <!-- Feedback (Secret String) -->
     <section class="section">
       <div class="container feedback-container">
         <h2>Feedback</h2>
@@ -116,7 +120,7 @@
       </div>
     </section>
 
-    <!-- Countdown Timer -->
+    <!-- Timer -->
     <section class="section">
       <div class="container timer-container">
         <div class="timer">
@@ -128,9 +132,10 @@
     <footer class="site-footer">
       <p class="muted">This is a CTF showcase. Use tools provided for challenges.</p>
     </footer>
+
   </main>
 
-  <!-- session expired overlay (hidden initially) -->
+  <!-- Session Expired Overlay -->
   <div id="sessionOverlay" class="overlay hidden">
     <div class="overlay-inner">
       <h2>System session expired</h2>
