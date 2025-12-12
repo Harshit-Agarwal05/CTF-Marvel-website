@@ -1,126 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marvel Multiverse Showcase</title>
-    <link rel="stylesheet" href="/static/css/style.css" />
-    <script defer src="/static/js/script.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Marvel Multiverse Showcase</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <script defer src="/static/js/script.js"></script>
 </head>
-
 <body>
-    <!-- Background starfield -->
-    <canvas id="starfield"></canvas>
+  <!-- Canvas background -->
+  <canvas id="bgCanvas"></canvas>
 
-    <main class="page">
+  <main class="page">
+    <header class="site-header">
+      <h1 class="title">Marvel Multiverse Showcase</h1>
+      <p class="subtitle">A cinematic gallery — explore iconic moments</p>
+    </header>
 
-        <!-- HEADER -->
-        <header class="site-header">
-            <h1 class="title">Marvel Multiverse Showcase</h1>
-            <p class="subtitle">Explore iconic moments across the multiverse</p>
-        </header>
+    <!-- Top big posters (2) -->
+    <section class="section big-section">
+      <div class="container big-container">
+        <article class="poster-card big">
+          <div class="image-wrapper">
+            <img src="/static/images/iron_man.jpg" alt="Iron Man">
+          </div>
+          <p class="quote">"I am Iron Man."</p>
+        </article>
 
-        <!-- BIG POSTERS -->
-        <section class="section">
-            <div class="container big-container">
+        <article class="poster-card big">
+          <div class="image-wrapper">
+            <img src="/static/images/avengers_endgame.jpg" alt="Avengers Endgame">
+          </div>
+          <p class="quote">"Whatever it takes."</p>
+        </article>
+      </div>
+    </section>
 
-                <article class="poster-card big">
-                    <div class="image-wrapper">
-                        <img src="/static/images/iron_man.jpg" alt="Iron Man Poster">
-                    </div>
-                    <p class="quote">"I am Iron Man."</p>
-                </article>
+    <!-- Grid of the remaining posters (10) -->
+    <section class="section">
+      <div class="container grid" id="posterGrid">
+        <article class="poster-card">
+          <div class="image-wrapper"><img src="/static/images/spider_man_nwh.jpg" alt=""></div>
+          <p class="quote">"With great power..."</p>
+        </article>
 
-                <article class="poster-card big">
-                    <div class="image-wrapper">
-                        <img src="/static/images/avengers_endgame.jpg" alt="Endgame Poster">
-                    </div>
-                    <p class="quote">"Whatever it takes."</p>
-                </article>
+        <article class="poster-card">
+          <div class="image-wrapper"><img src="/static/images/thor_love_and_thunder.jpg" alt=""></div>
+          <p class="quote">"Bring the thunder."</p>
+        </article>
 
-            </div>
-        </section>
+        <article class="poster-card">
+          <div class="image-wrapper"><img src="/static/images/doctor_strange_multiverse.jpg" alt=""></div>
+          <p class="quote">"The Multiverse is real."</p>
+        </article>
 
-        <!-- GRID POSTERS -->
-        <section class="section">
-            <div class="container grid">
+        <article class="poster-card">
+          <div class="image-wrapper"><img src="/static/images/black_panther_wakanda.jpg" alt=""></div>
+          <p class="quote">"Wakanda Forever."</p>
+        </article>
 
-                <article class="poster-card">
-                    <div class="image-wrapper">
-                        <img src="/static/images/spider_man_nwh.jpg" />
-                    </div>
-                    <p class="quote">"With great power..."</p>
-                </article>
+        <article class="poster-card">
+          <div class="image-wrapper"><img src="/static/images/wandavision.jpg" alt=""></div>
+          <p class="quote">"This is chaos magic."</p>
+        </article>
 
-                <article class="poster-card">
-                    <div class="image-wrapper">
-                        <img src="/static/images/thor_love_and_thunder.jpg" />
-                    </div>
-                    <p class="quote">"Bring the thunder."</p>
-                </article>
+        <article class="poster-card">
+          <div class="image-wrapper"><img src="/static/images/moon_knight.jpg" alt=""></div>
+          <p class="quote">"I am Vengeance."</p>
+        </article>
 
-                <article class="poster-card">
-                    <div class="image-wrapper">
-                        <img src="/static/images/doctor_strange_multiverse.jpg" />
-                    </div>
-                    <p class="quote">"The Multiverse is real."</p>
-                </article>
+        <article class="poster-card">
+          <div class="image-wrapper"><img src="/static/images/loki.jpg" alt=""></div>
+          <p class="quote">"I am burdened with glorious purpose."</p>
+        </article>
 
-                <article class="poster-card">
-                    <div class="image-wrapper">
-                        <img src="/static/images/black_panther_wakanda.jpg" />
-                    </div>
-                    <p class="quote">"Wakanda Forever."</p>
-                </article>
+        <article class="poster-card">
+          <div class="image-wrapper"><img src="/static/images/ms_marvel.jpg" alt=""></div>
+          <p class="quote">"Heroes come in all forms."</p>
+        </article>
 
-                <article class="poster-card">
-                    <div class="image-wrapper">
-                        <img src="/static/images/wandavision.jpg" />
-                    </div>
-                    <p class="quote">"This is chaos magic."</p>
-                </article>
+        <article class="poster-card">
+          <div class="image-wrapper"><img src="/static/images/hawkeye.jpg" alt=""></div>
+          <p class="quote">"Just aim and shoot."</p>
+        </article>
 
-                <article class="poster-card">
-                    <div class="image-wrapper">
-                        <img src="/static/images/moon_knight.jpg" />
-                    </div>
-                    <p class="quote">"I am Vengeance."</p>
-                </article>
+        <article class="poster-card">
+          <div class="image-wrapper"><img src="/static/images/guardians_vol3.jpg" alt=""></div>
+          <p class="quote">"We are Groot."</p>
+        </article>
+      </div>
+    </section>
 
-                <article class="poster-card">
-                    <div class="image-wrapper">
-                        <img src="/static/images/ms_marvel.jpg" />
-                    </div>
-                    <p class="quote">"Heroes come in all forms."</p>
-                </article>
+    <!-- Favourite movie/series (below grid) -->
+    <section class="section">
+      <div class="container fav-section">
+        <h2>Your Favourite Movie or Series</h2>
+        <div class="fav-controls">
+          <input id="favInput" placeholder="Enter a series or movie name" />
+          <button id="favSubmit">Submit</button>
+        </div>
+        <p id="favResponse" class="small-note"></p>
+      </div>
+    </section>
 
-                <article class="poster-card">
-                    <div class="image-wrapper">
-                        <img src="/static/images/hawkeye.jpg" />
-                    </div>
-                    <p class="quote">"Just aim and shoot."</p>
-                </article>
+    <!-- Feedback (secret string) -->
+    <section class="section">
+      <div class="container feedback-container">
+        <h2>Feedback</h2>
+        <textarea id="feedbackInput" placeholder="Write your message here..."></textarea>
+        <div class="controls">
+          <button id="submitBtn">Submit</button>
+          <button id="revealBtn" class="muted">Reveal Password</button>
+        </div>
+        <p id="responseMessage" class="response"></p>
+      </div>
+    </section>
 
-                <article class="poster-card">
-                    <div class="image-wrapper">
-                        <img src="/static/images/guardians_vol3.jpg" />
-                    </div>
-                    <p class="quote">"We are Groot."</p>
-                </article>
+    <!-- Countdown Timer -->
+    <section class="section">
+      <div class="container timer-container">
+        <div class="timer">
+          <span id="timerDisplay">10:00</span>
+        </div>
+      </div>
+    </section>
 
-            </div>
-        </section>
+    <footer class="site-footer">
+      <p class="muted">This is a CTF showcase. Use tools provided for challenges.</p>
+    </footer>
+  </main>
 
-        <!-- FEEDBACK -->
-        <section class="section">
-            <div class="container feedback-container">
-                <h2 class="feedback-title">Feedback</h2>
-                <textarea id="feedbackInput" placeholder="Write your message here..."></textarea>
-                <button id="submitBtn">Submit</button>
-                <p id="responseMessage" class="response"></p>
-            </div>
-        </section>
+  <!-- session expired overlay (hidden initially) -->
+  <div id="sessionOverlay" class="overlay hidden">
+    <div class="overlay-inner">
+      <h2>System session expired</h2>
+      <p>Please refresh to continue.</p>
+      <button id="overlayRefreshBtn">Refresh</button>
+    </div>
+  </div>
 
-    </main>
 </body>
 </html>
